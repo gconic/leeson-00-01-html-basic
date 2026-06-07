@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>나의 첫 웹페이지</title>
+
+		<style>
+			h1{ color: green; }
+			p{ font-size: 20px; }
+		</style>
+	</head>
+
+	<body>
+		<h1 id="hello">안녕하세요</h1>
+		<p>이것은 나의 첫 번째 웹페이지입니다.</p>
+
+		<button onclick="changeColor()">색상변경</button>
+		<button onclick="hideText()">제목 숨기기</button>
+		<button onclick="showText()">제목 보이기</button>
+		<br><br>
+		<a href="https://real4dhub.or.kr/" target="_blank">링크</a>
+
+	</body>
+
+	<script>
+		function changeColor()
+		{
+			hello.style.color = 'red';
+		}
+
+		function hideText()
+		{
+			hello.style.display = 'none';
+		}
+
+		function showText()
+		{
+			hello.style.display = 'block';
+		}		
+	</script>
+</html>
